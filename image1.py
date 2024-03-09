@@ -25,7 +25,7 @@ def buat_filter(image, jenis_filter):
 
 def page_main():
       
-    unggah_gambar = st.file_uploader('Pilih Gambarnya:', type=["jpg","jpeg","png"])
+    unggah_gambar = st.file_uploader('Pilih Gambarnya ngab:', type=["jpg","jpeg","png"])
     if unggah_gambar is not None:
         gambar = Image.open(unggah_gambar)
         #UTK MMBUAT 2 KOLOM YG LEBARNYA SM

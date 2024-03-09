@@ -25,6 +25,22 @@ PAGES = {
     "cawnima" : page_main
   }
   
-st.sidebar.image("popeye.png", width=100)
+st.sidebar.image("ggg.jpg", width=100)
 page = st.sidebar.radio("Pages List :", list(PAGES.keys()))
 PAGES[page]()
+
+#sembunyikan tombol git
+st.markdown(
+  """"
+      <style>
+      [data-testid="stActionButtonIcon"] {
+        display: none;
+      }
+      [data-testid="baseButton-header"] {
+        display: none;
+      }
+      
+      </style>
+  """,
+  unsafe_allow_html=True,
+)
